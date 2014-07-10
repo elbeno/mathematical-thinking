@@ -1,0 +1,60 @@
+#+TITLE:
+#+AUTHOR:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+XSLT:
+#+LaTeX_HEADER: \usepackage{amsmath, amsthm, amssymb, breqn}
+#+LaTeX_HEADER: \usepackage[margin=1in]{geometry}
+
+\noindent{}KEITH DEVLIN: Introduction to Mathematical Thinking (Fall 2013)\hfill Final Exam \\
+\\ \\
+\centerline{\underline{QUESTION 9}} \\
+\\ \\
+Given an infinite collection \(A_n,n=1,2,...\) of intervals of the real line, their
+\emph{intersection} is defined to be \(\cap\limits_{n=1}^\infty{}A_n=\{x|(\forall{}n)(x\in{}A_n)\}\).\\
+\\
+Give an example of a family of intervals \(A_n,n=1,2,...\) such that
+\(A_{n+1}\subset{}A_n\) for all \(n\) and \(\cap\limits_{n=1}^\infty{}A_n=\varnothing\).
+Prove that your example has the stated property.\\
+\\
+\\
+Such an example is the family of intervals \(A_n = (0, \frac{1}{n})\).\\
+\\
+\emph{Proof of 1st property:} by inspection.\\
+\\
+It is clear that \((0, \frac{1}{n+1})\subset{}(0, \frac{1}{n})\) since both intervals have the same
+left-open endpoint \(0\), and considering the right-open endpoints,
+\(\frac{1}{n+1}<\frac{1}{n}\).\\
+\\
+Therefore \((\forall{}n)(A_{n+1}\subset{}A_n)\).\\
+\\
+\emph{Proof of 2nd property:} by consideration of \(\lim_{n\to\infty}\frac{1}{n}\).\\
+\\
+Assume \(\lim_{n\to\infty}\frac{1}{n} = L\). Therefore for every real number \(\epsilon > 0\),
+there exists a natural number \(N\) such that:
+\begin{equation}
+(\forall{}n > N)(|\frac{1}{n} - L| < \epsilon)
+\end{equation}
+It is clear that
+\begin{equation*}
+(\forall{}n > N)(\frac{1}{n} < \frac{1}{N})
+\end{equation*}
+and
+\begin{equation*}
+(\forall{}\epsilon\in\mathbb{R},\epsilon>0)
+(\frac{1}{\left\lceil{\frac{1}{\epsilon}}\right\rceil} \leq \epsilon)
+\end{equation*}
+Therefore, choosing \(N = \left\lceil{\frac{1}{\epsilon}}\right\rceil\),
+\begin{gather*}
+(\forall{}n > N)(|\frac{1}{n} - 0| < \frac{1}{\left\lceil{\frac{1}{\epsilon}}\right\rceil} \leq \epsilon)
+\end{gather*}
+This is the definition of the limit in \((1)\) with \(L = 0\). Therefore \(\lim_{n\to\infty}\frac{1}{n} = 0\).\\
+\\
+Therefore \(A_\infty = (0,0) = \varnothing\), and hence
+\(\cap\limits_{n=1}^\infty{}A_n=\varnothing\).\qed

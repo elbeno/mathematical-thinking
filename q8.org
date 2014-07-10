@@ -1,0 +1,48 @@
+#+TITLE:
+#+AUTHOR:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+XSLT:
+#+LaTeX_HEADER: \usepackage{amsmath, amsthm, amssymb, breqn}
+#+LaTeX_HEADER: \usepackage[margin=1in]{geometry}
+
+\noindent{}KEITH DEVLIN: Introduction to Mathematical Thinking (Fall 2013)\hfill Final Exam \\
+\\ \\
+\centerline{\underline{QUESTION 8}} \\
+\\ \\
+\textbf{Theorem} if the sequence \(\{a_n\}\limits_{n=1}^\infty\) tends to limit \(L\)
+as \(n\to\infty\), then for any fixed number \(M > 0\),
+the sequence \(\{Ma_n\}\limits_{n=1}^\infty\) tends to the limit \(LM\).\\
+\\
+\emph{Proof:} from the definition of a limit.\\
+\\
+Since \(\lim_{n\to\infty} a_n = L\),
+for every real number \(\epsilon > 0\), there exists a natural number \(N\) such that
+\begin{equation}
+(\forall{}n > N)(|a_n - L| < \epsilon)\notag
+\end{equation}
+Suppose \(K = LM, M\in\mathbb{R}\) and \(M > 0\). Then equivalently,
+\begin{equation}
+(\forall{}n > N)(|a_n - \frac{K}{M}| < \epsilon)\notag
+\end{equation}
+and therefore
+\begin{equation}
+(\forall{}n > N)(M|a_n - \frac{K}{M}| < M\epsilon)\notag
+\end{equation}
+Since the choice of \(\epsilon\) and corresponding \(N\) are arbitrary, we can say for every
+real number \(\epsilon_1 = M\epsilon\) there exists a natural number \(N_1\) such that
+\begin{equation}
+(\forall{}n > N_1)(M|a_n - \frac{K}{M}| < \epsilon_1)\notag
+\end{equation}
+and hence,
+\begin{equation}
+(\forall{}n > N_1)(|Ma_n - K| < \epsilon_1)\notag
+\end{equation}
+This is the definition of a limit of the sequence \(\{Ma_n\}\limits_{n=1}^\infty\).
+Hence \(\lim_{n\to\infty} Ma_n = K = LM\).\qed

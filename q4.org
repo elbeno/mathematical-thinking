@@ -1,0 +1,45 @@
+#+TITLE:
+#+AUTHOR:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+XSLT:
+#+LaTeX_HEADER: \usepackage{amsmath, amsthm, amssymb, breqn}
+#+LaTeX_HEADER: \usepackage[margin=1in]{geometry}
+
+\noindent{}KEITH DEVLIN: Introduction to Mathematical Thinking (Fall 2013)\hfill Final Exam \\
+\\ \\
+\centerline{\underline{QUESTION 4}} \\
+\\ \\
+\textbf{Theorem} every odd natural number is one of the forms \(4n + 1\) or \(4n + 3\) where \(n\in\mathbb{Z}\). \\
+\\
+\emph{Proof:} by induction, considering each case. \\
+\\
+Base case: \(1 = 4n + 1\) where \(n = 0\). \\
+\\
+Inductive step: If \(k_i\) is an odd natural number, the next odd natural number is given by \(k_{i+1} = k_i + 2\). \\
+There are two cases to consider. \\
+\\
+(i) Assume \(k_i = 4n + 1\). Then:
+\begin{align*}
+k_{i+1} & = k_i + 2 \\
+& = 4n + 1 + 2 \tag{by induction hypothesis}\\
+& = 4n + 3
+\end{align*}
+Therefore, \(k_{i+1}\) is of the required form.\\
+\\
+(ii) Assume \(k_i = 4n + 3\). Then:
+\begin{align*}
+k_{i+1} & = k_i + 2 \\
+& = 4n + 3 + 2 \tag{by induction hypothesis}\\
+& = 4n + 4 + 1 \\
+& = 4(n+1) + 1
+\end{align*}
+Therefore, \(k_{i+1}\) is again of the required form.\\
+\\
+Therefore every odd natural number is one of the forms \(4n + 1\) or \(4n + 3\) where \(n\in\mathbb{Z}\).\qed

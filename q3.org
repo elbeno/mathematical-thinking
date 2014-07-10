@@ -1,0 +1,40 @@
+#+TITLE:
+#+AUTHOR:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+XSLT:
+#+LaTeX_HEADER: \usepackage{amsmath, amsthm, amssymb, breqn}
+#+LaTeX_HEADER: \usepackage[margin=1in]{geometry}
+
+\noindent{}KEITH DEVLIN: Introduction to Mathematical Thinking (Fall 2013)\hfill Final Exam \\
+\\ \\
+\centerline{\underline{QUESTION 3}} \\
+\\ \\
+\textbf{Theorem} for any integer \(n\), \(n^2 + n + 1\) is odd. \\
+\\
+\emph{Proof:} by consideration of even/odd cases. \\
+\\
+(i) Assume \(n\) is even. Then \(n = 2k\).
+\begin{align*}
+n^2 + n + 1 & = (2k)^2 + 2k + 1 \\
+& = 4k^2 + 2k + 1 \\
+& = 2(2k^2 + k) + 1
+\end{align*}
+Therefore, \(n\) is even \(\Rightarrow n^2 + n + 1\) is odd. \\
+\\
+(ii) Assume \(n\) is odd. Then \(n = 2k + 1\).
+\begin{align*}
+n^2 + n + 1 & = (2k + 1)^2 + (2k + 1) + 1 \\
+& = 4k^2 + 4k + 1 + 2k + 1 + 1 \\
+& = 4k^2 + 6k + 2 + 1 \\
+& = 2(2k^2 + 3k + 1) + 1
+\end{align*}
+Therefore, \(n\) is odd \(\Rightarrow n^2 + n + 1\) is odd. \\
+\\
+Therefore for any integer \(n\), \(n^2 + n + 1\) is odd.\qed

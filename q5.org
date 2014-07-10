@@ -1,0 +1,43 @@
+#+TITLE:
+#+AUTHOR:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+XSLT:
+#+LaTeX_HEADER: \usepackage{amsmath, amsthm, amssymb, breqn}
+#+LaTeX_HEADER: \usepackage[margin=1in]{geometry}
+
+\noindent{}KEITH DEVLIN: Introduction to Mathematical Thinking (Fall 2013)\hfill Final Exam \\
+\\ \\
+\centerline{\underline{QUESTION 5}} \\
+\\ \\
+\textbf{Theorem} for any integer \(n\), at least one of the integers \(n\), \(n+2\), \(n+4\) is divisible by 3.\\
+\\
+\emph{Proof:} by consideration of cases.\\
+\\
+Any \(n\in\mathbb{Z}\) can be written as \(3k\), \(3k+1\) or \(3k+2\), \(k\in\mathbb{Z}\).\\
+\\
+(i) Assume \(n = 3k\). Then (trivially) \(n\) is divisible by 3. \\
+\\
+(ii) Assume \(n = 3k+1\). Then:
+\begin{align*}
+n + 2 & = 3k + 1 + 2 \\
+& = 3k + 3 \\
+& = 3(k + 1)
+\end{align*}
+Therefore, \(n+2\) is divisible by 3.\\
+\\
+(iii) Assume \(n = 3k+2\). Then:
+\begin{align*}
+n + 4 & = 3k + 2 + 4 \\
+& = 3k + 6 \\
+& = 3(k + 2)
+\end{align*}
+Therefore, \(n+4\) is divisible by 3.\\
+\\
+Therefore for any integer \(n\), at least one of the integers \(n\), \(n+2\), \(n+4\) is divisible by 3.\qed

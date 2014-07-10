@@ -1,0 +1,39 @@
+#+TITLE:
+#+AUTHOR:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+XSLT:
+#+LaTeX_HEADER: \usepackage{amsmath, amsthm, amssymb}
+#+LaTeX_HEADER: \usepackage[margin=1in]{geometry}
+
+\noindent{}KEITH DEVLIN: Introduction to Mathematical Thinking (Fall 2013)\hfill Final Exam \\
+\\
+\\
+\centerline{\underline{QUESTION 1}} \\
+\\
+\\
+\textbf{Theorem}\((\exists{}m\in\mathbb{N})(\exists{}n\in\mathbb{N})(3m + 5n = 12)\) \\
+\\
+\emph{Disproof:} By consideration of cases. \\
+\\
+From the definition of the natural numbers \(\mathbb{N}\), and since
+\begin{align}
+m \geq 4 \Rightarrow 3m + 5n > 12 \notag\\
+n \geq 3 \Rightarrow 3m + 5n > 12\notag
+\end{align}
+it follows that in order for the theorem to be true, \(0 < m \leq 3\) and \(0 < n \leq 2\). \\
+\\
+\(m = 1 \land n = 1 \Rightarrow 3m + 5n = 8 \\
+m = 1 \land n = 2 \Rightarrow 3m + 5n = 13 \\
+m = 2 \land n = 1 \Rightarrow 3m + 5n = 11 \\
+m = 2 \land n = 2 \Rightarrow 3m + 5n = 16 \\
+m = 3 \land n = 1 \Rightarrow 3m + 5n = 14 \\
+m = 3 \land n = 2 \Rightarrow 3m + 5n = 19\) \\
+\\
+Therefore there are no \(m, n\) that satisfy the theorem.\qed
